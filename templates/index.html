@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de la Encuesta</title>
+</head>
+<body>
+    <h1>Resultados de la Encuesta</h1>
+
+    <table border="1">
+        <tr>
+            <th>Cliente</th>
+            <th>Pregunta 1</th>
+            <th>Pregunta 2</th>
+            <th>Pregunta 3</th>
+            <th>Pregunta 4</th>
+            <th>Pregunta 5</th>
+            <th>Pregunta 6</th>
+            <th>Pregunta 7</th>
+            <th>Pregunta 8</th>
+            <th>Pregunta 9</th>
+            <th>Pregunta 10</th>
+            <th>Suma Preguntas</th> 
+
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+            <td>{{ row[6] }}</td>
+            <td>{{ row[7] }}</td>
+            <td>{{ row[8] }}</td>
+            <td>{{ row[9] }}</td>
+            <td>{{ row[10] }}</td>
+            <td>{{ row[11] }}%</td> 
+        </tr>
+        {% endfor %}
+        <tr>
+            <td>Suma individual</td>
+            <td>{{ resultado_final }}%</td>
+            <td>{{ resultado_final_pregunta2 }}%</td>
+            <td>{{ resultado_final_pregunta3 }}%</td>
+            <td>{{ resultado_final_pregunta4 }}%</td>
+            <td>{{ resultado_final_pregunta5 }}%</td>
+            <td>{{ resultado_final_pregunta6 }}%</td>
+            <td>{{ resultado_final_pregunta7 }}%</td>
+            <td>{{ resultado_final_pregunta8 }}%</td>
+            <td>{{ resultado_final_pregunta9 }}%</td>
+            <td>{{ resultado_final_pregunta10 }}%</td>
+            
+           
+            
+            
+            
+        </tr>
+    </table>
+    
+    
+</body>
+</html>
