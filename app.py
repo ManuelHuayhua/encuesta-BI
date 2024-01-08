@@ -414,4 +414,4 @@ def grafico():
     return "Error de conexión a la base de datos."
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=8080)
